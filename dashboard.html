@@ -25,7 +25,6 @@ h1 {
     border-radius: 10px;
     box-shadow: 0 0 10px gray;
 }
-
 button {
     padding: 10px;
     background: #001f4d;
@@ -36,16 +35,8 @@ button {
 </style>
 
 <script>
-function showMessage(type){
-    if(type=="academic"){
-        alert("Academic help & study support 📚");
-    }
-    else if(type=="wellness"){
-        alert("Mental health & wellness support 🧠");
-    }
-    else if(type=="emergency"){
-        alert("Emergency help contacted 🚨");
-    }
+function openPage(page){
+    window.location.href = page;
 }
 </script>
 
@@ -53,21 +44,26 @@ function showMessage(type){
 
 <body>
 
-<h1>Welcome to Student Dashboard 👋</h1>
+<h1>Student Support Dashboard</h1>
 
 <div class="box">
-    <h3>Academic Support</h3>
-    <button onclick="showMessage('academic')">Open</button>
+    <h3>Academic Issues</h3>
+    <button onclick="openPage('academic.html')">View</button>
 </div>
 
 <div class="box">
-    <h3>Wellness Support</h3>
-    <button onclick="showMessage('wellness')">Open</button>
+    <h3>Mental Health</h3>
+    <button onclick="openPage('mental.html')">View</button>
 </div>
 
 <div class="box">
-    <h3>Emergency</h3>
-    <button onclick="showMessage('emergency')">Open</button>
+    <h3>Financial Issues</h3>
+    <button onclick="openPage('financial.html')">View</button>
+</div>
+
+<div class="box">
+    <h3>Emergency Help</h3>
+    <button onclick="openPage('emergency.html')">View</button>
 </div>
 
 </body>
