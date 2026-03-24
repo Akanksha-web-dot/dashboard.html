@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Dashboard</title>
+
+<style>
+body {
+    font-family: Arial;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+h1 {
+    background: #001f4d;
+    color: white;
+    padding: 15px;
+}
+
+.box {
+    margin: 20px;
+    padding: 20px;
+    background: white;
+    display: inline-block;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+}
+
+button {
+    padding: 10px;
+    background: #001f4d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+</style>
+
+<script>
+function showMessage(type){
+    if(type=="academic"){
+        alert("Academic help & study support 📚");
+    }
+    else if(type=="wellness"){
+        alert("Mental health & wellness support 🧠");
+    }
+    else if(type=="emergency"){
+        alert("Emergency help contacted 🚨");
+    }
+}
+</script>
+
+</head>
+
+<body>
+
+<h1>Welcome to Student Dashboard 👋</h1>
+
+<div class="box">
+    <h3>Academic Support</h3>
+    <button onclick="showMessage('academic')">Open</button>
+</div>
+
+<div class="box">
+    <h3>Wellness Support</h3>
+    <button onclick="showMessage('wellness')">Open</button>
+</div>
+
+<div class="box">
+    <h3>Emergency</h3>
+    <button onclick="showMessage('emergency')">Open</button>
+</div>
+
+</body>
+</html>
